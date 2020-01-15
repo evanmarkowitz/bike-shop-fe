@@ -50,14 +50,13 @@ function (_PureComponent) {
           lineNumber: 8
         },
         __self: this
-      }, __jsx(LogoWrapper, {
+      }, __jsx(FlexWrapper, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 9
         },
         __self: this
-      }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        href: "/",
+      }, __jsx("div", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 10
@@ -69,58 +68,142 @@ function (_PureComponent) {
           lineNumber: 11
         },
         __self: this
-      }, __jsx(Logo, {
-        src: "/wheels.png",
+      }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+        href: "/",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 12
         },
         __self: this
-      }), __jsx(Headline, {
+      }, __jsx(LogoWrapper, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 13
         },
         __self: this
-      }, "BIKE SHOP")))), __jsx("div", {
+      }, __jsx(Logo, {
+        src: "/wheels.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 14
+        },
+        __self: this
+      }), __jsx(Headline, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        },
+        __self: this
+      }, "BIKE SHOP"))))), __jsx("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }, __jsx("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, "Cart"))), __jsx(FlexWrapper, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }, __jsx(NavLeft, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
         },
         __self: this
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        href: "/buy",
+        href: "/shop",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 26
         },
         __self: this
       }, __jsx(NavLink, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 27
         },
         __self: this
       }, "Shop")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/sell",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 29
         },
         __self: this
       }, __jsx(NavLink, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 30
         },
         __self: this
       }, "Sell ", __jsx("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 30
         },
         __self: this
-      }, "//"), " Trade"))));
+      }, "//"), " Trade"))), __jsx(NavRight, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+        href: "/signup",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }, __jsx(NavLink, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }, "SignUp")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+        href: "/order",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, __jsx(NavLink, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }, "Order")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+        href: "/Account",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, __jsx(NavLink, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
+        },
+        __self: this
+      }, "Account")))), __jsx(Search, {
+        type: "text",
+        placeholder: "search",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }));
     }
   }]);
 
@@ -141,16 +224,20 @@ var LogoWrapper = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div.
   displayName: "Header__LogoWrapper",
   componentId: "ixgrx0-2"
 })(["display:flex;align-items:center;"]);
+var FlexWrapper = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div.withConfig({
+  displayName: "Header__FlexWrapper",
+  componentId: "ixgrx0-3"
+})(["display:flex;justify-content:space-between;"]);
 var Headline = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].h1.withConfig({
   displayName: "Header__Headline",
-  componentId: "ixgrx0-3"
+  componentId: "ixgrx0-4"
 })(["letter-spacing:.1em;font-size:2rem;font-family:'Roboto',sans-serif;transform:skew(-8deg);:hover{color:", "}"], function (props) {
   return props.theme.blue;
 });
 var NavLink = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].a.withConfig({
   displayName: "Header__NavLink",
-  componentId: "ixgrx0-4"
-})(["font-size:1.25rem;margin:1rem;color:", ";:hover{color:", ";span{color:", ";}}span{color:", ";}"], function (props) {
+  componentId: "ixgrx0-5"
+})(["font-size:1.25rem;color:", ";:hover{color:", ";span{color:", ";}}span{color:", ";}"], function (props) {
   return props.theme.black;
 }, function (props) {
   return props.theme.blue;
@@ -159,6 +246,18 @@ var NavLink = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].a.withCo
 }, function (props) {
   return props.theme.blue;
 });
+var NavLeft = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div.withConfig({
+  displayName: "Header__NavLeft",
+  componentId: "ixgrx0-6"
+})(["a{margin-right:1rem;}"]);
+var NavRight = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div.withConfig({
+  displayName: "Header__NavRight",
+  componentId: "ixgrx0-7"
+})(["a{margin-left:1rem;}padding-bottom:.5rem;"]);
+var Search = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].input.withConfig({
+  displayName: "Header__Search",
+  componentId: "ixgrx0-8"
+})(["width:100%;height:2rem;font-size:1rem;"]);
 /* harmony default export */ __webpack_exports__["default"] = (Header);
 
 /***/ }),

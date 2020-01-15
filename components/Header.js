@@ -6,22 +6,43 @@ class Header extends PureComponent {
   render() {
     return (
       <HeaderWrapper>
-        <LogoWrapper>
-          <Link href='/'>
+        <FlexWrapper>
+          <div>
             <LogoWrapper>
-              <Logo src='/wheels.png' />
-              <Headline>BIKE SHOP</Headline>
-              </LogoWrapper>
-          </Link>
-        </LogoWrapper>
-        <div>
-          <Link href='/buy'>
-            <NavLink>Shop</NavLink>
-          </Link>
-          <Link href='/sell'>
-            <NavLink>Sell <span>//</span> Trade</NavLink>
-          </Link>
-        </div>
+              <Link href='/'>
+                <LogoWrapper>
+                  <Logo src='/wheels.png' />
+                  <Headline>BIKE SHOP</Headline>
+                </LogoWrapper>
+              </Link>
+            </LogoWrapper>
+          </div>
+          <div>
+            <p>Cart</p>
+          </div>
+        </FlexWrapper>
+        <FlexWrapper>
+          <NavLeft>
+            <Link href='/shop'>
+              <NavLink>Shop</NavLink>
+            </Link>
+            <Link href='/sell'>
+              <NavLink>Sell <span>//</span> Trade</NavLink>
+            </Link>
+          </NavLeft>
+          <NavRight>
+            <Link href='/signup'>
+              <NavLink>SignUp</NavLink>
+            </Link>
+            <Link href='/order'>
+              <NavLink>Order</NavLink>
+            </Link>
+            <Link href='/Account'>
+              <NavLink>Account</NavLink>
+            </Link>
+          </NavRight>
+        </FlexWrapper>
+        <Search type='text' placeholder='search'/>
       </HeaderWrapper>
     );
   }
@@ -44,6 +65,11 @@ const LogoWrapper = styled.div`
   align-items: center;
 `
 
+const FlexWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
 const Headline = styled.h1`
   letter-spacing: .1em;
   font-size: 2rem;
@@ -56,7 +82,6 @@ const Headline = styled.h1`
 
 const NavLink = styled.a`
   font-size: 1.25rem;
-  margin: 1rem;
   color: ${props => props.theme.black};
   :hover {
     color: ${props => props.theme.blue};
@@ -67,6 +92,25 @@ const NavLink = styled.a`
   span {
     color: ${props => props.theme.blue};
   }
+`
+
+const NavLeft = styled.div`
+  a {
+    margin-right: 1rem;
+  }
+`
+
+const NavRight = styled.div`
+  a {
+    margin-left: 1rem;
+  }
+  padding-bottom: .5rem;
+`
+
+const Search = styled.input`
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
 `
 
 
