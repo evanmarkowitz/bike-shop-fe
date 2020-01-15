@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import Link from 'next/link';
 import styled from 'styled-components'
 
 class Header extends PureComponent {
@@ -6,10 +7,21 @@ class Header extends PureComponent {
     return (
       <HeaderWrapper>
         <LogoWrapper>
-          <Logo src='/wheels.png' />
-          <Headline>BIKE SHOP</Headline>
+          <Link href='/'>
+            <LogoWrapper>
+              <Logo src='/wheels.png' />
+              <Headline>BIKE SHOP</Headline>
+              </LogoWrapper>
+          </Link>
         </LogoWrapper>
-        <p>Certified Pre-Owned Bikes</p>
+        <div>
+          <Link href='/buy'>
+            <NavLink>Shop</NavLink>
+          </Link>
+          <Link href='/sell'>
+            <NavLink>Sell <span>//</span> Trade</NavLink>
+          </Link>
+        </div>
       </HeaderWrapper>
     );
   }
@@ -18,7 +30,7 @@ class Header extends PureComponent {
 const HeaderWrapper = styled.section`
   box-sizing: border-box;
   padding: .5rem;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid ${prop => prop.theme.black};
 `
 
 const Logo = styled.img`
@@ -36,6 +48,21 @@ const Headline = styled.h1`
   letter-spacing: .1em;
   font-size: 2rem;
   font-family: 'Roboto', sans-serif;
+`
+
+const NavLink = styled.a`
+  font-size: 1.25rem;
+  margin: 1rem;
+  color: ${props => props.theme.black};
+  :hover {
+    color: ${props => props.theme.blue};
+    span {
+      color: ${props => props.theme.black};
+    }
+  }
+  span {
+    color: ${props => props.theme.blue};
+  }
 `
 
 
