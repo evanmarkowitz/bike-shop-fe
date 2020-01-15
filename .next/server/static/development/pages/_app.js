@@ -212,7 +212,7 @@ const LogoWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div
 const Headline = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.h1.withConfig({
   displayName: "Header__Headline",
   componentId: "ixgrx0-3"
-})(["letter-spacing:.1em;font-size:2rem;font-family:'Roboto',sans-serif;"]);
+})(["letter-spacing:.1em;font-size:2rem;font-family:'Roboto',sans-serif;transform:skew(-8deg);:hover{color:", "}"], props => props.theme.blue);
 const NavLink = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.a.withConfig({
   displayName: "Header__NavLink",
   componentId: "ixgrx0-4"
@@ -301,6 +301,12 @@ const theme = {
   black: '#393939',
   blue: '#3FB6A7'
 };
+const GlobalStyle = styled_components__WEBPACK_IMPORTED_MODULE_3__["createGlobalStyle"]`
+  body {
+    margin: 0;
+    padding: 0;
+  }
+`;
 
 class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   render() {
@@ -308,25 +314,31 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       theme: theme,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15
+        lineNumber: 23
       },
       __self: this
-    }, __jsx(PageWrapper, {
+    }, __jsx(GlobalStyle, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
+        lineNumber: 24
+      },
+      __self: this
+    }), __jsx(PageWrapper, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
       },
       __self: this
     }, __jsx(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 26
       },
       __self: this
     }), __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18
+        lineNumber: 27
       },
       __self: this
     }), this.props.children));
@@ -337,7 +349,7 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 const PageWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "Page__PageWrapper",
   componentId: "r7gvn6-0"
-})(["font-family:'Roboto',sans-serif;text-decoration:none;color:", ";margin:0;padding:0;"], props => props.theme.black);
+})(["font-family:'Roboto',sans-serif;text-decoration:none;color:", ";margin:0;padding:0;background-color:#f5f5f5;height:100vh;width:100vw;margin:0;"], props => props.theme.black);
 /* harmony default export */ __webpack_exports__["default"] = (Page);
 
 /***/ }),

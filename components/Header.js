@@ -48,6 +48,10 @@ const Headline = styled.h1`
   letter-spacing: .1em;
   font-size: 2rem;
   font-family: 'Roboto', sans-serif;
+  transform: skew(-8deg);
+  :hover {
+    color: ${props => props.theme.blue}
+  }
 `
 
 const NavLink = styled.a`
