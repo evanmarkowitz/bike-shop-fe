@@ -35,6 +35,9 @@ const LogoWrapper = styled.div`
 const Headline = styled.h1`
   letter-spacing: .1em;
   font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
 `
+
+
 
 export default Header;

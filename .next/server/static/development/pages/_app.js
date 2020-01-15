@@ -164,7 +164,7 @@ const LogoWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div
 const Headline = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.h1.withConfig({
   displayName: "Header__Headline",
   componentId: "ixgrx0-3"
-})(["letter-spacing:.1em;font-size:2rem;"]);
+})(["letter-spacing:.1em;font-size:2rem;font-family:'Roboto',sans-serif;"]);
 /* harmony default export */ __webpack_exports__["default"] = (Header);
 
 /***/ }),
@@ -209,6 +209,14 @@ const Meta = () => {
       lineNumber: 8
     },
     __self: undefined
+  }), __jsx("link", {
+    href: "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap",
+    rel: "stylesheet",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
   }));
 };
 
@@ -229,30 +237,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
 /* harmony import */ var _Meta__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Meta */ "./components/Meta.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/evanmarkowitz/bike-shop/bike-shop-fe/components/Page.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
+
 class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   render() {
-    return __jsx("div", {
+    return __jsx(PageWrapper, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 8
+        lineNumber: 10
       },
       __self: this
     }, __jsx(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 9
+        lineNumber: 11
       },
       __self: this
     }), __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 10
+        lineNumber: 12
       },
       __self: this
     }), this.props.children);
@@ -260,6 +271,9 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 }
 
+const PageWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div`
+  font-family: 'Roboto', sans-serif;
+`;
 /* harmony default export */ __webpack_exports__["default"] = (Page);
 
 /***/ }),

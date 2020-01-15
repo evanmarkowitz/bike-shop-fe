@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
 import Header from './Header'
 import Meta from './Meta'
+import styled from 'styled-components'
+
 
 class Page extends Component {
   render() {
     return (
-      <div>
+      <PageWrapper>
         <Meta />
         <Header />
         {this.props.children}
-      </div>
+      </PageWrapper>
     );
   }
 }
+
+const PageWrapper = styled.div`
+  font-family: 'Roboto', sans-serif;
+`
+
 
 export default Page;
