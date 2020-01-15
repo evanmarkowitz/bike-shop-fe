@@ -1,25 +1,23 @@
-import React, { Component } from 'react';
-import Header from './Header'
-import Meta from './Meta'
-import styled, {ThemeProvider, createGlobalStyle} from 'styled-components'
+import React, { Component } from "react";
+import Header from "./Header";
+import Meta from "./Meta";
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 
 const theme = {
-  black: '#393939',
-  blue: '#3FB6A7'
-}
+  black: "#393939",
+  blue: "#3FB6A7"
+};
 
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
   }
-`
-
-
+`;
 
 class Page extends Component {
   render() {
-    return ( 
+    return (
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <PageWrapper>
@@ -33,7 +31,7 @@ class Page extends Component {
 }
 
 const PageWrapper = styled.div`
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: ${props => props.theme.black};
   margin: 0;
@@ -42,7 +40,6 @@ const PageWrapper = styled.div`
   height: 100vh;
   width: 100vw;
   margin: 0;
-`
-
+`;
 
 export default Page;

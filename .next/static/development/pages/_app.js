@@ -132,7 +132,7 @@ function (_PureComponent) {
 var HeaderWrapper = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].section.withConfig({
   displayName: "Header__HeaderWrapper",
   componentId: "ixgrx0-0"
-})(["box-sizing:border-box;padding:.5rem;border-bottom:3px solid ", ";"], function (prop) {
+})(["box-sizing:border-box;padding:0.5rem;border-bottom:3px solid ", ";"], function (prop) {
   return prop.theme.black;
 });
 var Logo = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].img.withConfig({
@@ -150,7 +150,7 @@ var FlexWrapper = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div.
 var Headline = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].h1.withConfig({
   displayName: "Header__Headline",
   componentId: "ixgrx0-4"
-})(["letter-spacing:.1em;font-size:2rem;font-family:'Roboto',sans-serif;transform:skew(-8deg);:hover{color:", "}"], function (props) {
+})(["letter-spacing:0.1em;font-size:2rem;font-family:\"Roboto\",sans-serif;transform:skew(-8deg);:hover{color:", ";}"], function (props) {
   return props.theme.blue;
 });
 var Search = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].input.withConfig({
@@ -278,52 +278,52 @@ var Nav = function Nav() {
   }, "Sell ", __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   }, "//"), " Trade"))), __jsx(NavRight, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 18
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/signup",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 19
     },
     __self: this
   }, __jsx(NavLink, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 20
     },
     __self: this
   }, "SignUp")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/order",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 22
     },
     __self: this
   }, __jsx(NavLink, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }, "Order")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/Account",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 25
     },
     __self: this
   }, __jsx(NavLink, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
     },
     __self: this
   }, "Account"))));
@@ -336,7 +336,7 @@ var NavLeft = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.with
 var NavRight = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "Nav__NavRight",
   componentId: "sc-1076py6-1"
-})(["a{margin-left:1rem;}padding-bottom:.5rem;"]);
+})(["a{margin-left:1rem;}padding-bottom:0.5rem;"]);
 var FlexWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "Nav__FlexWrapper",
   componentId: "sc-1076py6-2"
@@ -401,8 +401,8 @@ function _templateObject() {
 
 
 var theme = {
-  black: '#393939',
-  blue: '#3FB6A7'
+  black: "#393939",
+  blue: "#3FB6A7"
 };
 var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_9__["createGlobalStyle"])(_templateObject());
 
@@ -424,31 +424,31 @@ function (_Component) {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 21
         },
         __self: this
       }, __jsx(GlobalStyle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 22
         },
         __self: this
       }), __jsx(PageWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 23
         },
         __self: this
       }, __jsx(_Meta__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 24
         },
         __self: this
       }), __jsx(_Header__WEBPACK_IMPORTED_MODULE_7__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 25
         },
         __self: this
       }), this.props.children));
@@ -461,7 +461,7 @@ function (_Component) {
 var PageWrapper = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div.withConfig({
   displayName: "Page__PageWrapper",
   componentId: "r7gvn6-0"
-})(["font-family:'Roboto',sans-serif;text-decoration:none;color:", ";margin:0;padding:0;background-color:#f5f5f5;height:100vh;width:100vw;margin:0;"], function (props) {
+})(["font-family:\"Roboto\",sans-serif;text-decoration:none;color:", ";margin:0;padding:0;background-color:#f5f5f5;height:100vh;width:100vw;margin:0;"], function (props) {
   return props.theme.black;
 });
 /* harmony default export */ __webpack_exports__["default"] = (Page);

@@ -202,7 +202,7 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0__["PureComponent"] {
 const HeaderWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.section.withConfig({
   displayName: "Header__HeaderWrapper",
   componentId: "ixgrx0-0"
-})(["box-sizing:border-box;padding:.5rem;border-bottom:3px solid ", ";"], prop => prop.theme.black);
+})(["box-sizing:border-box;padding:0.5rem;border-bottom:3px solid ", ";"], prop => prop.theme.black);
 const Logo = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.img.withConfig({
   displayName: "Header__Logo",
   componentId: "ixgrx0-1"
@@ -218,7 +218,7 @@ const FlexWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div
 const Headline = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.h1.withConfig({
   displayName: "Header__Headline",
   componentId: "ixgrx0-4"
-})(["letter-spacing:.1em;font-size:2rem;font-family:'Roboto',sans-serif;transform:skew(-8deg);:hover{color:", "}"], props => props.theme.blue);
+})(["letter-spacing:0.1em;font-size:2rem;font-family:\"Roboto\",sans-serif;transform:skew(-8deg);:hover{color:", ";}"], props => props.theme.blue);
 const Search = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.input.withConfig({
   displayName: "Header__Search",
   componentId: "ixgrx0-5"
@@ -345,52 +345,52 @@ const Nav = () => {
   }, "Sell ", __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: undefined
   }, "//"), " Trade"))), __jsx(NavRight, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 18
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/signup",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 19
     },
     __self: undefined
   }, __jsx(NavLink, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 20
     },
     __self: undefined
   }, "SignUp")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/order",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 22
     },
     __self: undefined
   }, __jsx(NavLink, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: undefined
   }, "Order")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/Account",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 25
     },
     __self: undefined
   }, __jsx(NavLink, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
     },
     __self: undefined
   }, "Account"))));
@@ -403,7 +403,7 @@ const NavLeft = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.wit
 const NavRight = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "Nav__NavRight",
   componentId: "sc-1076py6-1"
-})(["a{margin-left:1rem;}padding-bottom:.5rem;"]);
+})(["a{margin-left:1rem;}padding-bottom:0.5rem;"]);
 const FlexWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "Nav__FlexWrapper",
   componentId: "sc-1076py6-2"
@@ -438,8 +438,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const theme = {
-  black: '#393939',
-  blue: '#3FB6A7'
+  black: "#393939",
+  blue: "#3FB6A7"
 };
 const GlobalStyle = styled_components__WEBPACK_IMPORTED_MODULE_3__["createGlobalStyle"]`
   body {
@@ -454,31 +454,31 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       theme: theme,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 21
       },
       __self: this
     }, __jsx(GlobalStyle, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
+        lineNumber: 22
       },
       __self: this
     }), __jsx(PageWrapper, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25
+        lineNumber: 23
       },
       __self: this
     }, __jsx(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26
+        lineNumber: 24
       },
       __self: this
     }), __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 25
       },
       __self: this
     }), this.props.children));
@@ -489,7 +489,7 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 const PageWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "Page__PageWrapper",
   componentId: "r7gvn6-0"
-})(["font-family:'Roboto',sans-serif;text-decoration:none;color:", ";margin:0;padding:0;background-color:#f5f5f5;height:100vh;width:100vw;margin:0;"], props => props.theme.black);
+})(["font-family:\"Roboto\",sans-serif;text-decoration:none;color:", ";margin:0;padding:0;background-color:#f5f5f5;height:100vh;width:100vw;margin:0;"], props => props.theme.black);
 /* harmony default export */ __webpack_exports__["default"] = (Page);
 
 /***/ }),
